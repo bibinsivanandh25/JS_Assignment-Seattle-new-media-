@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - Frontend Developer</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero_section">
+        <div class="container">
+          <div class="content_block">
+            <h1 class="heading">We create <span class="auto_text"></span></h1>
+            <h1 class="heading">experiences</h1>
+            <div class="video_block">
+              <video
+                src="images/Video.mp4"
+                class="sub_video"
+                loop
+                muted
+                autoplay
+              ></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Section -->
+      <section class="video_section">
+        <div class="container"></div>
+      </section>
+
+      <!-- Slider Section -->
+
+      <section class="slider_section">
+        <div class="top_block">
+          <h2 class="slider_heading">Our Projects</h2>
+          <div class="icon_block">
+            <img
+              src="images/LeftArrow.png"
+              alt="arrow_left_icon"
+              class="left_icon icon"
+              onclick="changeImage(-1)"
+            />
+            <img
+              src="images/RightArrow.png"
+              alt="arrow_right_icon"
+              class="right-icon icon"
+              onclick="changeImage(1)"
+            />
+          </div>
+        </div>
+
+        <div class="image-numbers">
+          <span class="image-number" onclick="showImage(0)">01</span>
+          <span class="image-number" onclick="showImage(1)">02</span>
+          <span class="image-number" onclick="showImage(2)">03</span>
+          <span class="image-number" onclick="showImage(3)">04</span>
+          <span class="image-number" onclick="showImage(4)">05</span>
+        </div>
+
+        <div class="carousel">
+          <img
+            src="images/SliderImg1.jpg"
+            class="carousel-image"
+            alt="Image 1"
+          />
+          <img
+            src="images/SliderImg2.jpg"
+            class="carousel-image"
+            alt="Image 2"
+          />
+          <img
+            src="images/SliderImg3.png"
+            class="carousel-image"
+            alt="Image 3"
+          />
+          <img
+            src="images/SliderImg4.jpg"
+            class="carousel-image"
+            alt="Image 4"
+          />
+          <img
+            src="images/SliderImg5.png"
+            class="carousel-image"
+            alt="Image 5"
+          />
+        </div>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
