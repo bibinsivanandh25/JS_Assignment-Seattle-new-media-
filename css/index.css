@@ -61,6 +61,7 @@ body {
 }
 
 /* Video Section */
+
 .video_section {
   padding: 50px 60px;
   width: 60%;
@@ -74,6 +75,7 @@ body {
 }
 
 /* Slider Section */
+
 .slider_section {
   padding: 40px 0 40px 60px;
 }
@@ -144,11 +146,6 @@ body {
   cursor: grab;
 }
 
-/* .carousel_img_block {
-  position: relative;
-  width: 100%;
-} */
-
 .carousel-image {
   display: none;
   width: 100%;
@@ -168,30 +165,26 @@ body {
   height: 400px;
 }
 
-/* .sub_text {
-  position: absolute;
-  bottom: 20px;
-  left: 26px;
-  background-color: #ffffff78;
-  color: #4c2c7c;
-  border-radius: 6px;
-  padding: 8px 14px;
+/* Scrollbar styles */
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-.sub_text h3 {
-  font-family: 'Besley', serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 24px;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
 }
 
-.sub_text p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-} */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3d1e6a;
+}
 
-@media screen and (max-width: 768px) {
+/* Media Query */
+
+/* @media screen and (max-width: 768px) {
   .hero_section {
     padding: 30px 40px;
   }
@@ -219,21 +212,4 @@ body {
     width: 50%;
     height: 100vh;
   }
-}
-
-/* Scrollbar styles */
-
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #3d1e6a;
-}
+} */
